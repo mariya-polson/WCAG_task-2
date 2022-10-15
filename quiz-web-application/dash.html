@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz-Application</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo-details">
+        <img src="pics/logo.png" alt="quiz-logo" />
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="dash.html" class="active">
+            <i class="bx bx-grid-alt"></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="test1.html">
+            <i class="bx bx-box"></i>
+            <span class="links_name">MCQs</span>
+          </a>
+        </li>
+        <li>
+          <a href="test2.html">
+            <i class="bx bx-list-ul"></i>
+            <span class="links_name">Video Quiz</span>
+          </a>
+        </li>
+        <li>
+          <a href="test3.html">
+            <i class="bx bx-pie-chart-alt-2"></i>
+            <span class="links_name">Chart Quiz</span>
+          </a>
+        </li>
+        <li>
+          <a href="test4.html">
+            <i class="bx bx-coin-stack"></i>
+            <span class="links_name">Audio Quiz</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-book-alt"></i>
+            <span class="links_name">Test Details</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-user"></i>
+            <span class="links_name">Teams</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-message"></i>
+            <span class="links_name">Messages</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-heart"></i>
+            <span class="links_name">Favrorites</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-cog"></i>
+            <span class="links_name">Settings</span>
+          </a>
+        </li>
+        <li class="log_out">
+          <a href="index.html">
+            <i class="bx bx-log-out"></i>
+            <span class="links_name">Log out</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- <main role="main"> -->
+    <section class="home-section" role="main">
+      <nav>
+        <div class="sidebar-button">
+          <i class="bx bx-menu sidebarBtn"></i>
+          <h1 class="dashboard">Dashboard</h1>
+        </div>
+        <div class="search-box">
+          <label for="searchbox"
+            ><span class="sr-only">Visit example.com</span></label
+          >
+          <input id="searchbox" type="text" placeholder="Search..." />
+          <i class="bx bx-search"></i>
+        </div>
+        <div class="profile-details">
+          <!--<img src="images/profile.jpg" alt="">-->
+          <span class="admin_name">Prem Shahi</span>
+          <i class="bx bx-chevron-down"></i>
+        </div>
+      </nav>
+
+      <div class="home-content">
+        <div class="overview-boxes">
+          <div class="box">
+            <div class="right-side">
+              <div class="box-topic">Tests Attempted</div>
+              <div class="number">40</div>
+              <div class="indicator">
+                <i class="bx bx-up-arrow-alt"></i>
+                <span class="text">Up from yesterday</span>
+              </div>
+            </div>
+            <i class="bx bx-cart-alt cart"></i>
+          </div>
+          <div class="box">
+            <div class="right-side">
+              <div class="box-topic">Tests Passed</div>
+              <div class="number">38</div>
+              <div class="indicator">
+                <i class="bx bx-up-arrow-alt"></i>
+                <span class="text">Up from yesterday</span>
+              </div>
+            </div>
+            <i class="bx bxs-cart-add cart two"></i>
+          </div>
+          <div class="box">
+            <div class="right-side">
+              <div class="box-topic">Tests Failed</div>
+              <div class="number">2</div>
+              <div class="indicator">
+                <i class="bx bx-up-arrow-alt"></i>
+                <span class="text">Up from yesterday</span>
+              </div>
+            </div>
+            <i class="bx bx-cart cart three"></i>
+          </div>
+          <div class="box">
+            <div class="right-side">
+              <div class="box-topic">Total Score</div>
+              <div class="number">110/150</div>
+              <div class="indicator">
+                <i class="bx bx-down-arrow-alt down"></i>
+                <span class="text">Down From Today</span>
+              </div>
+            </div>
+            <i class="bx bxs-cart-download cart four"></i>
+          </div>
+        </div>
+
+        <div class="sales-boxes">
+          <div class="recent-sales box">
+            <div class="title">Test Percentage</div>
+            <div class="sales-details">
+              <img
+                class="dougnut-chart"
+                src="pics/pass-percentage-chart.png"
+                alt="test-percentage"
+              />
+            </div>
+            <div class="button">
+              <div class="indicators">
+                <span class="mcq"
+                  ><hr />
+                  MCQs</span
+                >
+                <span class="video-quiz"
+                  ><hr />
+                  Video Quiz</span
+                >
+                <span class="chart-quiz"
+                  ><hr />
+                  Chart Quiz</span
+                >
+                <span class="audio-quiz"
+                  ><hr />
+                  Audio Quiz</span
+                >
+              </div>
+              <a href="#">View Details</a>
+            </div>
+          </div>
+          <div class="top-sales box">
+            <div class="title">Leader Board</div>
+            <ul class="top-sales-details">
+              <li>
+                <a href="#">
+                  <!--<img src="images/sunglasses.jpg" alt="">-->
+                  <span class="product">Stephen</span>
+                </a>
+                <span class="price">149/150</span>
+              </li>
+              <li>
+                <a href="#">
+                  <!--<img src="images/jeans.jpg" alt="">-->
+                  <span class="product">Jane </span>
+                </a>
+                <span class="price">145/150</span>
+              </li>
+              <li>
+                <a href="#">
+                  <!-- <img src="images/nike.jpg" alt="">-->
+                  <span class="product">Joe</span>
+                </a>
+                <span class="price">145/150</span>
+              </li>
+              <li>
+                <a href="#">
+                  <!--<img src="images/scarves.jpg" alt="">-->
+                  <span class="product">Vedh</span>
+                </a>
+                <span class="price">140/150</span>
+              </li>
+              <li>
+                <a href="#">
+                  <!--<img src="images/blueBag.jpg" alt="">-->
+                  <span class="product">Prem</span>
+                </a>
+                <span class="price">110/150</span>
+              </li>
+              <li>
+                <a href="#">
+                  <!--<img src="images/bag.jpg" alt="">-->
+                  <span class="product">Maxin</span>
+                </a>
+                <span class="price">100/150</span>
+              </li>
+
+              <li>
+                <a href="#">
+                  <!--<img src="images/addidas.jpg" alt="">-->
+                  <span class="product">Jessi</span>
+                </a>
+                <span class="price">98/150</span>
+              </li>
+              <li>
+                <a href="#">
+                  <!--<img src="images/shirt.jpg" alt="">-->
+                  <span class="product">Liyana</span>
+                </a>
+                <span class="price">85/150</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- </main> -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

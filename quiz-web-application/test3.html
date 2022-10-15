@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz-Application</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo-details">
+        <img src="pics/logo.png" alt="quiz-logo" />
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="dash.html">
+            <i class="bx bx-grid-alt"></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="test1.html">
+            <i class="bx bx-box"></i>
+            <span class="links_name">MCQs</span>
+          </a>
+        </li>
+        <li>
+          <a href="test2.html">
+            <i class="bx bx-list-ul"></i>
+            <span class="links_name">Video Quiz</span>
+          </a>
+        </li>
+        <li>
+          <a href="test3.html" class="active">
+            <i class="bx bx-pie-chart-alt-2"></i>
+            <span class="links_name">Chart Quiz</span>
+          </a>
+        </li>
+        <li>
+          <a href="test4.html">
+            <i class="bx bx-coin-stack"></i>
+            <span class="links_name">Audio Quiz</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-book-alt"></i>
+            <span class="links_name">Test Details</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-user"></i>
+            <span class="links_name">Teams</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-message"></i>
+            <span class="links_name">Messages</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-heart"></i>
+            <span class="links_name">Favrorites</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-cog"></i>
+            <span class="links_name">Settings</span>
+          </a>
+        </li>
+        <li class="log_out">
+          <a href="index.html">
+            <i class="bx bx-log-out"></i>
+            <span class="links_name">Log out</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- <main role="main"> -->
+    <section class="home-section" role="main">
+      <nav>
+        <div class="sidebar-button">
+          <i class="bx bx-menu sidebarBtn"></i>
+          <h1 class="dashboard">Dashboard</h1>
+        </div>
+        <div class="search-box">
+          <label for="searchbox"
+            ><span class="sr-only">Visit example.com</span></label
+          >
+          <input id="searchbox" type="text" placeholder="Search..." />
+          <i class="bx bx-search"></i>
+        </div>
+        <div class="profile-details">
+          <!--<img src="images/profile.jpg" alt="">-->
+          <span class="admin_name">Prem Shahi</span>
+          <i class="bx bx-chevron-down"></i>
+        </div>
+      </nav>
+
+      <div class="home-content">
+        <button class="Start">Start Quiz</button>
+        <p class="instruction">
+          <span>Directions:</span> Study the following charts and graphs
+          carefully and answer the question that follows
+        </p>
+        <ul class="quiz">
+          <li>
+            <img src="pics/pie_chart1.png" alt="pie-chart" />
+            <h2>
+              <span class="question-number">1.</span> What is the respect ion
+              proportion between number of understudies in Management in the
+              years 2005 and number of understudy in expressions in the years
+              2006?
+            </h2>
+            <ul class="choices">
+              <li>
+                <label
+                  ><input type="radio" name="question0" value="A" /><span>
+                    33:19</span
+                  ></label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="question0" value="B" /><span
+                    >16:31</span
+                  ></label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="question0" value="C" /><span
+                    >19:33</span
+                  ></label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="question0" value="D" /><span
+                    >31:16</span
+                  ></label
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <img src="pics/bar-graph.png" alt="bar-graph-data-representation" />
+            <h2>
+              <span class="question-number">2.</span> Which genre of the fiction
+              book had the highest sale in the year 2008?
+            </h2>
+            <ul class="choices">
+              <li>
+                <label
+                  ><input type="radio" name="question1" value="A" /><span
+                    >Mystery</span
+                  ></label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="question1" value="B" /><span
+                    >Classic</span
+                  ></label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="question1" value="C" /><span
+                    >Romance</span
+                  ></label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="question1" value="D" /><span
+                    >Young Adult</span
+                  ></label
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <img
+              src="pics/line_chart.png"
+              alt="line_chart-data-representation "
+            />
+            <h2>
+              <span class="question-number">3.</span> Which month had the lowest
+              Desktop sale?
+            </h2>
+            <ul class="choices">
+              <li>
+                <label
+                  ><input type="radio" name="question2" value="A" /><span
+                    >February</span
+                  ></label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="question2" value="B" /><span
+                    >June</span
+                  ></label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="question2" value="C" /><span
+                    >January</span
+                  ></label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="question2" value="D" /><span
+                    >May</span
+                  ></label
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <button class="view-results" onclick="returnScore()">
+          View Results
+        </button>
+        <span id="myresults" class="my-results">Score</span>
+      </div>
+      <!-- </div> -->
+    </section>
+    <!-- </main> -->
+    <script src="script.js"></script>
+  </body>
+</html>
